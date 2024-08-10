@@ -1,0 +1,13 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: A Demo EC2 Instance, through CloudFormation template.
+
+Resources:
+  MyEc2:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      InstanceType: t2.micro
+      ImageId: ami-0a6b545f62129c495
+      KeyName: edgar
+      SecurityGroupIds: 
+        - sg-005002ed2a22aeae1
+      SubnetId: subnet-0139ff00ab152c3ae
